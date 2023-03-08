@@ -1,6 +1,11 @@
+<h5>Fragment with JS code</h5>
+<div id="github-fragment-div">Not working</div>
 <script>
-  window.alert("test");
+  const elem = document.getElementById("github-fragment-div");
+  elem.innerHTML = "JS works!<br />Have a look at the console.log output!";
+  
+  window.localStorage.setItem('foo', 'bar');
+  console.log("hello from GitHub-hosted snippet");
+  const item = window.localStorage.getItem('foo');
+  console.dir("foo", item);
 </script>
-
-
-<h5>Fragment with JS code</h5
